@@ -65,32 +65,6 @@
   font-style: italic !important;
 }
 
-//[WIP]
-// Flex Classes ------------------------------------------------------------- //
-
-.u-fb {
-  display: flex;
-
-  &--dir-row {
-    flex-direction: row;
-  }
-
-  &--dir-column {
-    flex-direction: column;
-  }
-
-  &--cnt-center {
-    justify-content: center;
-  }
-
-  &--as-center {
-    align-self: center;
-  }
-
-  &--jc-between {
-    justify-content:space-between;
-  }
-}
 
 //[WIP]
 // Float Classes ------------------------------------------------------------ //
@@ -126,7 +100,9 @@
   border-left: 1px solid;
 }
 
-.u-pointer{cursor: pointer;}
+.u-pointer{
+  cursor: pointer;
+}
 
 .u-shadow{
   -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
@@ -170,47 +146,57 @@
 
 // Flexbox
 //
-.u-flex {
-  @include flexbox;
-}
 
-.u-column {
-  @extend .u-flex;
-  @include flex-direction(column);
-}
+.u-fb {
+  display: flex;
 
-.u-row {
-  @extend .u-flex;
-  @include flex-direction(row);
-}
+  &--dir-row {
+    flex-direction: row;
+  }
 
-.u-row-wrap {
-  @include flex-wrap(wrap);
-}
+  &--dir-column {
+    flex-direction: column;
+  }
 
-.u-row-reverse {
-  @extend .u-flex;
-  @include flex-direction(row-reverse);
-}
+  &--jc-center {
+    justify-content: center;
+  }
 
-.u-space-between {
-  @include justify-content(space-between);
-}
+  &--as-center {
+    align-self: center;
+  }
 
-.u-flex-start {
-  @include justify-content(flex-start);
-}
+  &--jc-between {
+    justify-content:space-between;
+  }
 
-.u-flex-end {
-  @include justify-content(flex-end);
-}
+  &--jc-center {
+    justify-content:center;
+  }
 
-.u-justify-center {
-  @include justify-content(center);
-}
+  &--wrap {
+    flex-wrap:wrap;
+  }
 
-.u-items-center {
-  @include align-items(center);
+  &--n-wrap {
+    flex-wrap:nowrap;
+  }
+
+  &--dir-reverse {
+    flex-direction:row-reverse;
+  }
+
+  &--start {
+    justify-content:flex-start;
+  }
+
+  &--jc-end {
+    justify-content:flex-end;
+  }
+
+  &--ai-center {
+    align-items:center;
+  }
 }
 
 // Lists ---------------------------------------------------------------------//
@@ -229,4 +215,27 @@
 .u-expand {
   margin-left: -$gutter;
   margin-right: -$gutter;
+}
+
+// Image ---------------------------------------------------------------------//
+
+.u-img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.u-display-none {
+  display: none;
+}
+
+.u-overflow {
+  &--hidden {
+    overflow: hidden;
+  }
+  &--auto {
+    overflow: auto;
+  }
+  &--scroll {
+    overflow: scroll;
+  }
 }
