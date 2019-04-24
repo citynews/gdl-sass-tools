@@ -288,3 +288,18 @@
     border-color: $color;
   }
 }
+
+// Alert colors ----------------------------------------------------------- //
+
+@each $color in $alert-colors {
+  
+  .u-bg-#{$color}{
+    background-color: $color;
+  }
+  .u-color-#{$color}{
+    color: $color;
+  }
+  .u-border-#{$color}{
+    border-color: $color;
+  }
+}
