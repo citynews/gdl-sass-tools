@@ -4,65 +4,65 @@
 
 @each $value in $measure {
   .u-m--#{$value} {
-    margin: calc-measure($value) !important;
+    margin: calc-measure($value);
   }
 
   .u-mt--#{$value} {
-    margin-top: calc-measure($value) !important;
+    margin-top: calc-measure($value);
   }
 
   .u-mr--#{$value} {
-    margin-right: calc-measure($value) !important;
+    margin-right: calc-measure($value);
   }
 
   .u-mb--#{$value} {
-    margin-bottom: calc-measure($value) !important;
+    margin-bottom: calc-measure($value);
   }
 
   .u-ml--#{$value} {
-    margin-left: calc-measure($value) !important;
+    margin-left: calc-measure($value);
   }
 
   .u-p--#{$value} {
-    padding: calc-measure($value) !important;
+    padding: calc-measure($value);
   }
 
   .u-pt--#{$value} {
-    padding-top: calc-measure($value) !important;
+    padding-top: calc-measure($value);
   }
 
   .u-pr--#{$value} {
-    padding-right: calc-measure($value) !important;
+    padding-right: calc-measure($value);
   }
 
   .u-pb--#{$value} {
-    padding-bottom: calc-measure($value) !important;
+    padding-bottom: calc-measure($value);
   }
 
   .u-pl--#{$value} {
-    padding-left: calc-measure($value) !important;
+    padding-left: calc-measure($value);
   }
 }
 
 // Text align Classes ------------------------------------------------------- //
 
 .u-align--center {
-  text-align: center !important;
+  text-align: center;
 }
 
 .u-align--left {
-  text-align: left !important;
+  text-align: left;
 }
 
 .u-align--right {
-  text-align: right !important;
+  text-align: right;
 }
 
 //[WIP]
 // Font style Classes ------------------------------------------------------- //
 
 .u-fs--italic {
-  font-style: italic !important;
+  font-style: italic;
 }
 
 .u-fs--bold {
@@ -74,11 +74,11 @@
 // Float Classes ------------------------------------------------------------ //
 
 .u-float--left {
-  float: left !important;
+  float: left;
 }
 
 .u-float--right {
-  float: right !important;
+  float: right;
 }
 
 //[WIP]
