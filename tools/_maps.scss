@@ -4,47 +4,48 @@
 // Theme Colors Name
 //
 $colors : (
-  'White',	#FFFFFF,
-  'Black',	#000000,
-  'Red',	#FF0000	,
-  'Maroon',	#800000	,
-  'Yellow',	#FFFF00,
-  'Olive',	#808000,
-  'Lime',	#00FF00	,
-  'Green',	#008000	,
-  'Aqua',	#00FFFF	,
-  'Teal',	#008080	,
-  'Blue',	#0000FF	,
-  'Navy',	#000080	,
-  'Fuchsia',	#FF00FF	,
-  'Purple',	#800080	,
+  'White':	#FFFFFF,
+  'Black':	#000000,
+  'Red':	#FF0000,
+  'Brown':	#A52A2A,
+  'Orange':	#FFA500,
+  'Yellow':	#FFFF00,
+  'Olive':	#808000,
+  'Lime':	#00FF00,
+  'Green':	#008000,
+  'Aqua':	#00FFFF,
+  'Teal':	#008080,
+  'Blue':	#0000FF,
+  'Navy':	#000080,
+  'Fuchsia':	#FF00FF,
+  'Purple':	#800080
 );
 
 $grey-scale :(
-  "Grey3",	#080808,
-  "Grey7",	#121212,
-  "Grey11",	#1c1c1c,
-  "Grey15",	#262626,
-  "Grey19",	#303030,
-  "Grey23",	#3a3a3a,
-  "Grey27",	#444444,
-  "Grey30",	#4e4e4e,
-  "Grey35",	#585858,
-  "Grey39",	#626262,
-  "Grey42",	#6c6c6c,
-  "Grey46",	#767676,
-  "Grey50",	#808080,
-  "Grey54",	#8a8a8a,
-  "Grey58",	#949494,
-  "Grey62",	#9e9e9e,
-  "Grey66",	#a8a8a8,
-  "Grey70",	#b2b2b2,
-  "Grey74",	#bcbcbc,
-  "Grey78",	#c6c6c6,
-  "Grey82",	#d0d0d0,
-  "Grey85",	#dadada,
-  "Grey89",	#e4e4e4,
-  "Grey93",	#eeeeee
+  "Grey3":	#080808,
+  "Grey7":	#121212,
+  "Grey11":	#1c1c1c,
+  "Grey15":	#262626,
+  "Grey19":	#303030,
+  "Grey23":	#3a3a3a,
+  "Grey27":	#444444,
+  "Grey30":	#4e4e4e,
+  "Grey35":	#585858,
+  "Grey39":	#626262,
+  "Grey42":	#6c6c6c,
+  "Grey46":	#767676,
+  "Grey50":	#808080,
+  "Grey54":	#8a8a8a,
+  "Grey58":	#949494,
+  "Grey62":	#9e9e9e,
+  "Grey66":	#a8a8a8,
+  "Grey70":	#b2b2b2,
+  "Grey74":	#bcbcbc,
+  "Grey78":	#c6c6c6,
+  "Grey82":	#d0d0d0,
+  "Grey85":	#dadada,
+  "Grey89":	#e4e4e4,
+  "Grey93":	#eeeeee
 );
 
 // Social colors
@@ -57,24 +58,33 @@ $social-colors: (
   'whatsapp': #25d366
 );
 
+// Alert colrs
+
+$alert-colors: (
+  'danger': #cc3300,
+  'warning': #ffcc00,
+  'succes': #339900,
+  'info' : #0000FF
+)
+
 // Axes
 //
 $axes: (
-  'mt': margin-top,
-  'mr': margin-right,
-  'mb': margin-bottom,
-  'ml': margin-left,
-  'mx': margin,
-  'my': margin,
-  'm0': margin,
-  'pt': padding-top,
-  'pr': padding-right,
-  'pb': padding-bottom,
-  'pl': padding-left,
-  'px': padding,
-  'py': padding,
-  'pxy': padding,
-  'p0': padding
+  'mt': 'margin-top',
+  'mr': 'margin-right',
+  'mb': 'margin-bottom',
+  'ml': 'margin-left',
+  'mx': 'margin',
+  'my': 'margin',
+  'm0': 'margin',
+  'pt': 'padding-top',
+  'pr': 'padding-right',
+  'pb': 'padding-bottom',
+  'pl': 'padding-left',
+  'px': 'padding',
+  'py': 'padding',
+  'pxy': 'padding',
+  'p0': 'padding'
 );
 
 // Breakpoints
