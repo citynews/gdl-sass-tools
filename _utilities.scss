@@ -239,3 +239,18 @@
     overflow: scroll;
   }
 }
+
+// Color utilities --------------------------------------------------------- //
+
+@each $color in $colors {
+  
+  .u-bg-#{$color}{
+    background-color: $color;
+  }
+  .u-color-#{$color}{
+    color: $color;
+  }
+  .u-border-#{$color}{
+    border-color: $color;
+  }
+}
