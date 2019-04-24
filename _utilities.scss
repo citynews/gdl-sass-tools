@@ -244,9 +244,39 @@
   }
 }
 
-// Color utilities --------------------------------------------------------- //
+// General colors ---------------------------------------------------------- //
 
 @each $color in $colors {
+  
+  .u-bg-#{$color}{
+    background-color: $color;
+  }
+  .u-color-#{$color}{
+    color: $color;
+  }
+  .u-border-#{$color}{
+    border-color: $color;
+  }
+}
+
+// Grey scale colors ------------------------------------------------------- //
+
+@each $color in $grey-scale {
+  
+  .u-bg-#{$color}{
+    background-color: $color;
+  }
+  .u-color-#{$color}{
+    color: $color;
+  }
+  .u-border-#{$color}{
+    border-color: $color;
+  }
+}
+
+// Social colors ----------------------------------------------------------- //
+
+@each $color in $social-colors {
   
   .u-bg-#{$color}{
     background-color: $color;
