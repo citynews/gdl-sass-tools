@@ -47,8 +47,6 @@
   }
 };
 
-
-
 // Flexbox SASS mixins--------------------------------------------------------//
 // The spec: http://www.w3.org/TR/css3-flexbox
 
@@ -165,23 +163,6 @@
   -webkit-align-self: $align;
   -ms-flex-item-align: $align;
   align-self: $align;
-}
-
-// Animation Keyframe --------------------------------------------------------//
-//
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
 }
 
 // Layer Element -------------------------------------------------------------//
