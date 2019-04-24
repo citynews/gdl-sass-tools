@@ -187,11 +187,64 @@
 // Transition ----------------------------------------------------------------//
 //
 @mixin transition($transition...) {
-  -webkit-transition: $transition;
+  // A shorthand property for setting the four transition properties into a single property
   transition:         $transition;
+  -webkit-transition: $transition;
+
+  /*
+  Specifies a delay (in seconds) for the transition effect
+  transition-delay:   $transition-delay;
+  */ 
+  
+  /*
+  Specifies how many seconds or milliseconds a transition effect takes to complete
+  transition-duration:$transition-duration;
+  */
+  
+  /*
+  Specifies the name of the CSS property the transition effect is for
+  transition-property: $transition-property;
+  */ 
+  
+  /*
+  Specifies the speed curve of the transition effect
+  transition-timing-function:$transition-timing-function;	
+  */
 }
 
-// Z-index -------------------------------------------------------------------//
+// Animation ------------------------------------------------------------------ //
+
+@mixin animation($animation...) {
+  
+  animation-name: $name;
+  animation-duration: $duration;
+
+  /* 
+  animation-timing-function: $timing;
+  
+  ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+  linear - Specifies an animation with the same speed from start to end
+  ease-in - Specifies an animation with a slow start
+  ease-out - Specifies an animation with a slow end
+  ease-in-out - Specifies an animation with a slow start and end
+  cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function 
+  */
+  
+  // animation-delay: $delay;
+  
+  // animation-iteration-count: $iteration;
+
+  /*
+  animation-direction: $direction;
+  
+  normal - The animation is played as normal (forwards). This is default
+  reverse - The animation is played in reverse direction (backwards)
+  alternate - The animation is played forwards first, then backwards
+  alternate-reverse - The animation is played backwards first, then forwards
+  */
+}
+
+// Z-index -------------------------------------------------------------------- //
 //
 @mixin z($key){
   @if map-has-key($z-index, $key) {
