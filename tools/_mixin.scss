@@ -47,17 +47,7 @@
   }
 };
 
-// Grid columns --------------------------------------------------------------//
-//
-@mixin grid($breakpoint) {
-  @media (min-width: map-get($breakpoints, $breakpoint)) {
-    @for $col from 1 through 12 {
-      .o-cell-#{$col}\@#{$breakpoint} {
-        width: 8.333333% * $col;
-      }
-    }
-  }
-};
+
 
 // Flexbox SASS mixins--------------------------------------------------------//
 // The spec: http://www.w3.org/TR/css3-flexbox
