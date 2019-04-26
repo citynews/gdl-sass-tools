@@ -1,0 +1,24 @@
+{
+  "name": "scss_tools",
+  "version": "1.0.0",
+  "description": "Library of tools and utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamercitynews/SCSS_tools.git"
+  },
+  "keywords": [
+    "scss",
+    "ITCSS",
+    "library"
+  ],
+  "author": "CityNews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamercitynews/SCSS_tools/issues"
+  },
+  "homepage": "https://github.com/tamercitynews/SCSS_tools#readme"
+}
