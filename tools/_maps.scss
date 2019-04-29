@@ -56,93 +56,6 @@ $breakpoints: (
   xxl: 1440px
 );
 
-// spacing
-//
-$spacing: (
-  '0': 0,
-  'size1x': $size1x,
-  'size2x': $size2x,
-  'size3x': $size3x,
-  'size4x': $size4x,
-  'size6x': $size6x,
-  'size9x': $size9x,
-  'size12x': $size12x
-);
-
-// typography
-//
-$typography: (
-  'primer': (
-    base: $type-primer,
-    'line-height': (
-      base: .75rem
-    )
-  ),
-  'pica': (
-    base: $type-pica,
-    'line-height': (
-      base: 1rem
-    )
-  ),
-  'english': (
-    base: $type-english,
-    small: $type-english-small,
-    xsmall: $type-english-xsmall,
-    'line-height': (
-      base: 1.5rem,
-      small: 1.25rem,
-      xsmall: 1rem
-    )
-  ),
-  'columbian': (
-    base: $type-columbian,
-    'line-height': (
-      base: 1.25rem
-    )
-  ),
-  'greatprimer': (
-    base: $type-greatprimer,
-    'line-height': (
-      base: 1.375rem
-    )
-  ),
-  'paragon': (
-    base: $type-paragon,
-    'line-height': (
-      base: 1.5rem
-    )
-  ),
-  'doublepica': (
-    base: $type-doublepica,
-    small: $type-doublepica-small,
-    xsmall: $type-doublepica-small,
-    'line-height': (
-      base: 1.75rem,
-      small: 1.25rem,
-      xsmall: 1rem
-    )
-  ),
-  'doublecolumbian': (
-    base: $type-doublecolumbian,
-    small: $type-doublecolumbian-small,
-    xsmall: $type-doublecolumbian-xsmall,
-    'line-height': (
-      base: 2.75rem,
-      small: 1.75rem,
-      xsmall: 1.5rem
-    )
-  ),
-  'canon': (
-    base: $type-canon,
-    medium: $type-canon-medium,
-    small: $type-canon-small,
-    'line-height': (
-      base: 3.25rem,
-      medium: 2.25rem,
-      small: 1.75rem
-    )
-  )
-);
 
 // z-layers
 // toggle and menu are directly influenced by adv skin z-index
@@ -167,22 +80,4 @@ $measure:(
   "and-half",
   "double",
   "quad"
-);
-
-$heights: (
-  25vh,
-  50vh,
-  75vh,
-  100vh,
-  150vh,
-  200vh
-);
-
-$widths: (
-  25vw,
-  50vw,
-  75vw,
-  100vw,
-  150vw,
-  200vw,
 );

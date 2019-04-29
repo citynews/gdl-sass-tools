@@ -251,16 +251,3 @@
     border-color: $hex;
   }
 }
-
-// Div utilities
-@each $height in $heights {
-  .u-height--#{$height} {
-    min-height: $height;
-  }  
-}
- 
-@each $width in $widths {
-  .u-width--#{$width} {
-    min-width: $width;
-  }  
-}
