@@ -255,51 +255,6 @@
   }
 }
 
-// Grey scale colors ------------------------------------------------------- //
-
-@each $color, $hex in $grey-scale {
-  
-  .u-bg--#{$color}{
-    background-color: $hex;
-  }
-  .u-color--#{$color}{
-    color: $hex;
-  }
-  .u-border--#{$color}{
-    border-color: $hex;
-  }
-}
-
-// Social colors ----------------------------------------------------------- //
-
-@each $color, $hex in $social-colors {
-  
-  .u-bg--#{$color}{
-    background-color: $hex;
-  }
-  .u-color--#{$color}{
-    color: $hex;
-  }
-  .u-border--#{$color}{
-    border-color: $hex;
-  }
-}
-
-// Alert colors ----------------------------------------------------------- //
-
-@each $color, $hex in $alert-colors {
-  
-  .u-bg--#{$color}{
-    background-color: $hex;
-  }
-  .u-color--#{$color}{
-    color: $hex;
-  }
-  .u-border--#{$color}{
-    border-color: $hex;
-  }
-}
-
 // Div utilities
 @each $height in $heights {
   .u-height--#{$height} {
