@@ -82,6 +82,60 @@
   }
 }
 
+// Columns ------------------------------------------------------------------ //	
+
+@mixin columns($arg: auto) {	
+  @include prefixer(columns, $arg, webkit moz spec);	
+}	
+
+ @mixin column-count($int: auto) {	
+  @include prefixer(column-count, $int, webkit moz spec);	
+}	
+
+ @mixin column-gap($length: normal) {	
+  @include prefixer(column-gap, $length, webkit moz spec);	
+}	
+
+ @mixin column-fill($arg: auto) {	
+  @include prefixer(column-fill, $arg, webkit moz spec);	
+}	
+
+ @mixin column-rule($arg) {	
+  @include prefixer(column-rule, $arg, webkit moz spec);	
+}	
+
+ @mixin column-rule-color($color) {	
+  @include prefixer(column-rule-color, $color, webkit moz spec);	
+}	
+
+ @mixin column-rule-style($style: none) {	
+  @include prefixer(column-rule-style, $style, webkit moz spec);	
+}	
+
+ @mixin column-rule-width ($width: none) {	
+  @include prefixer(column-rule-width, $width, webkit moz spec);	
+}	
+
+ @mixin column-span($arg: none) {	
+  @include prefixer(column-span, $arg, webkit moz spec);	
+}	
+
+ @mixin column-width($length: auto) {	
+  @include prefixer(column-width, $length, webkit moz spec);	
+}	
+
+// Columns Grid --------------------------------------------------------------//	
+//	
+ @mixin grid($breakpoint) {	
+  @media (min-width: map-get($breakpoints, $breakpoint)) {	
+    @for $col from 1 through 12 {	
+      .o-cell-#{$col}\@#{$breakpoint} {	
+        width: 8.333333% * $col;	
+      }	
+    }	
+  }	
+};
+
 // Flexbox SASS mixins--------------------------------------------------------//
 // The spec: http://www.w3.org/TR/css3-flexbox
 @mixin flx($direction:column,$wrap:wrap,$justify:flex-start,$align:flex-start) {
