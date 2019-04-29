@@ -58,7 +58,6 @@
   text-align: right;
 }
 
-//[WIP]
 // Font style Classes ------------------------------------------------------- //
 
 .u-f--italic {
@@ -69,8 +68,7 @@
   font-weight: bold;
 }
 
-
-//[WIP]
+ 
 // Float Classes ------------------------------------------------------------ //
 
 .u-float--left {
@@ -80,8 +78,7 @@
 .u-float--right {
   float: right;
 }
-
-//[WIP]
+ 
 // Border width and style Classes ------------------------------------------- //
 
 .u-bd {
@@ -151,7 +148,7 @@
 // Flexbox
 //
 
-.u-fb {
+.u-flx {
   display: flex;
 
   &--dir-row {
