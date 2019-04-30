@@ -1,11 +1,10 @@
 // scss-lint:disable PropertySortOrder VendorPrefix
 // $MIXINS ------------------------------------------------------------------ //
-@import 'maps';
-
+@import "maps";
 
 // Animation ---------------------------------------------------------------- //
 //
-@mixin animation($name, $duration,$timing,$delay,$iteration,$direction) {
+@mixin animation($name, $duration, $timing, $delay, $iteration, $direction) {
   animation-delay: $delay;
   animation-direction: $direction;
   animation-duration: $duration;
@@ -15,10 +14,9 @@
   animation-timing-function: $timing;
 }
 
-
 // Background image --------------------------------------------------------- //
 //
-@mixin  bgimg($position,$repeat,$size) {
+@mixin bgimg($position, $repeat, $size) {
   background-position: $position;
   background-repeat: $repeat;
   background-size: $size;
@@ -26,7 +24,7 @@
 
 // Border ----------------------------------------------------------------- -- //
 //
-@mixin border($size,$style,$color) {
+@mixin border($size, $style, $color) {
   border-bottom-color: $color;
   border-style: $style;
   border-width: $size;
@@ -53,9 +51,9 @@
 }
 
 @mixin border-rounded($radius) {
-  -moz-border-radius : $radius;
-  -webkit-border-radius : $radius;
-  border-radius : $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin u-border($direction, $size, $style, $color) {
@@ -64,13 +62,12 @@
   }
 }
 
-
 // Box shadow --------------------------------------------------------------- //
 //
 @mixin box-shadow($shadow) {
-  -moz-box-shadow : $shadow;
-  -webkit-box-shadow : $shadow;
-  box-shadow : $shadow;
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
 }
 
 // Box sizing --------------------------------------------------------------- //
@@ -92,7 +89,7 @@
 
 // Columns Grid --------------------------------------------------------------//
 //
- @mixin grid($breakpoint) {
+@mixin grid($breakpoint) {
   @media (min-width: map-get($breakpoints, $breakpoint)) {
     @for $col from 1 through 12 {
       .o-cell-#{$col}\@#{$breakpoint} {
@@ -100,12 +97,11 @@
       }
     }
   }
-};
+}
 
 // Flexbox SASS mixins--------------------------------------------------------//
 // The spec: http://www.w3.org/TR/css3-flexbox
-@mixin flexbox($direction:row,$wrap:nowrap,$justify:flex-start,$align:flex-start) {
-
+@mixin flexbox($direction: row, $wrap: nowrap, $justify: flex-start, $align: flex-start) {
   -webkit-flex-direction: $direction;
 
   -webkit-flex-wrap: $wrap;
@@ -119,8 +115,8 @@
   justify-content: $justify;
 
   justify-content: $align;
-
 }
+
 // Flexbox display
 //
 @mixin flex-display() {
@@ -223,7 +219,6 @@
 @mixin flex-align-self($align) {
   -webkit-align-self: $align;
   align-self: $align;
-
 }
 
 // Gradient ------------------------------------------------------------------//
@@ -234,8 +229,7 @@
 
 // Margin and Padding mixin for creating custom utility classes
 //
-@mixin custom-utility($utility, $direction, $size){
-
+@mixin custom-utility($utility, $direction, $size) {
   .u-#{$utility}-#{$direction} {
     #{$utility}-#{$direction}: $size;
   }
@@ -245,63 +239,69 @@
 //
 @mixin bp($bp, $rule: min-width) {
   @media screen and (#{$rule}: map-get($breakpoints, $bp)) {
-      @content;
+    @content;
   }
 }
 
 // Orientation media query
 //
 @mixin orientation($orientation) {
-
-  @if $orientation == landscape {
+  @if $orientation==landscape {
     @media only screen and (orientation: landscape) {
-      @content
+      @content;
     }
   } @else {
-      @media only screen and (orientation: portrait) {
-        @content
-      }
+    @media only screen and (orientation: portrait) {
+      @content;
+    }
   }
-};
+}
 
 // Position ----------------------------------------------------------------- //
 //
-@mixin position-a-tr($position: absolute, $top:0, $right:0){
+@mixin position-a-tr($position: absolute, $top: 0, $right: 0) {
   position: $position;
   right: $right;
   top: $top;
 }
-@mixin position-a-tl($position: absolute, $top:0, $left:0){
+
+@mixin position-a-tl($position: absolute, $top: 0, $left: 0) {
   left: $left;
   position: $position;
   top: $top;
 }
-@mixin position-a-br($position: absolute, $bottom:0, $right:0){
+
+@mixin position-a-br($position: absolute, $bottom: 0, $right: 0) {
   bottom: $bottom;
   position: $position;
   right: $right;
 }
-@mixin position-a-bl($position: absolute, $bottom:0, $left:0){
+
+@mixin position-a-bl($position: absolute, $bottom: 0, $left: 0) {
   bottom: $bottom;
   left: $left;
   position: $position;
 }
-@mixin position-f-tl($position: fixed, $top:0, $left:0){
+
+@mixin position-f-tl($position: fixed, $top: 0, $left: 0) {
   left: $left;
   position: $position;
   top: $top;
 }
-@mixin position-f-tr($position: fixed, $top:0, $right:0){
+
+@mixin position-f-tr($position: fixed, $top: 0, $right: 0) {
   position: $position;
   right: $right;
   top: $top;
 }
-@mixin position-f-br($position: fixed, $bottom:0, $right:0){
+
+@mixin position-f-br($position: fixed, $bottom: 0, $right: 0) {
   bottom: $bottom;
   position: $position;
   right: $right;
 }
-@mixin position-f-bl($position: fixed, $bottom:0, $left:0){
+
+@mixin position-f-bl($position: fixed, $bottom: 0, $left: 0) {
   bottom: $bottom;
   left: $left;
   position: $position;
@@ -309,9 +309,9 @@
 
 // Pseudo Element ------------------------------------------------------------//
 //
-@mixin pseudo ($top:0,$left:0,$bottom:auto, $right:auto,$width: 100%, $height:100%) {
+@mixin pseudo($top: 0, $left: 0, $bottom: auto, $right: auto, $width: 100%, $height: 100%) {
   bottom: $bottom;
-  content: '';
+  content: "";
   height: $height;
   left: $left;
   position: absolute;
@@ -332,16 +332,15 @@
 @mixin transition($transition) {
   -webkit-transition: $transition;
   // A shorthand property for setting the four transition properties into a single property
-  transition:         $transition;
+  transition: $transition;
 }
 
 // Z-index ------------------------------------------------------------------ //
 //
-@mixin z($key){
+@mixin z($key) {
   @if map-has-key($z-index, $key) {
     z-index: map-get($z-index, $key);
-  }
-  @else {
+  } @else {
     z-index: $key;
   }
 }

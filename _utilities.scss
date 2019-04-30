@@ -16,7 +16,6 @@
   }
 }
 
-
 // Text align Classes ------------------------------------------------------- //
 //
 .u-text-center {
@@ -40,7 +39,6 @@
 .u-bold {
   font-weight: bold;
 }
-
 
 // Float Classes ------------------------------------------------------------ //
 //
@@ -68,17 +66,14 @@
   border: 0 none;
 }
 
-
-
-.u-pointer{
+.u-pointer {
   cursor: pointer;
 }
 
-.u-shadow{
+.u-shadow {
   -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
-	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 }
-
 
 // Flexbox
 //
@@ -90,28 +85,36 @@
   &-row {
     flex-direction: row;
   }
+
   &-row-reverse {
     flex-direction: row-reverse;
   }
+
   &-column {
     flex-direction: column;
   }
+
   &-columm-reverse {
     flex-direction: column-reverse;
   }
+
   // justify
   &-justify-center {
     justify-content: center;
   }
+
   &-justify-start {
     justify-content: flex-start;
   }
+
   &-justify-end {
     justify-content: flex-end;
   }
+
   &-justify-between {
     justify-content: space-between;
   }
+
   &-justify-around {
     justify-content: space-around;
   }
@@ -120,40 +123,49 @@
   &-content-center {
     align-content: center;
   }
+
   &-content-start {
     align-content: flex-start;
   }
+
   &-content-end {
     align-content: flex-end;
   }
+
   &-content-between {
     align-content: flex-between;
   }
+
   &-content-around {
     align-content: flex-around;
   }
 
   // wrap
   &-wrap {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
+
   &-nowrap {
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
   }
 
   // align items
   &-items-center {
     align-items: center;
   }
+
   &-items-start {
     align-items: flex-start;
   }
+
   &-items-end {
     align-items: flex-end;
   }
+
   &-items-stretch {
     align-items: flex-stretch;
   }
+
   &-items-baseline {
     align-items: flex-baseline;
   }
@@ -192,9 +204,11 @@
   &-hidden {
     overflow: hidden;
   }
+
   &-auto {
     overflow: auto;
   }
+
   &-scroll {
     overflow: scroll;
   }
@@ -203,11 +217,11 @@
 // General colors ---------------------------------------------------------- //
 
 @each $color, $hex in $colors {
-
-  .u-bg-#{$color}{
+  .u-bg-#{$color} {
     background-color: $hex;
   }
-  .u-color-#{$color}{
+
+  .u-color-#{$color} {
     color: $hex;
   }
 }
