@@ -250,14 +250,46 @@
 
 // Position ----------------------------------------------------------------- //
 //
-@mixin atr($position: absolute, $top:0, $right:0){}
-@mixin atl($position: absolute, $top:0, $left:0){}
-@mixin abr($position: absolute, $bottom:0, $right:0){}
-@mixin abl($position: absolute, $bottom:0, $left:0){}
-@mixin ftl($position: fixed, $top:0, $left:0){}
-@mixin ftr($position: fixed, $top:0, $right:0){}
-@mixin fbr($position: fixed, $bottom:0, $right:0){}
-@mixin fbl($position: fixed, $bottom:0, $left:0){}
+@mixin position-a-tr($position: absolute, $top:0, $right:0){
+  position: $position;
+  top: $top;
+  right: $right;
+}
+@mixin position-a-tl($position: absolute, $top:0, $left:0){
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin position-a-br($position: absolute, $bottom:0, $right:0){
+  position: $position;
+  right: $right;
+  bottom: $bottom;
+}
+@mixin position-a-bl($position: absolute, $bottom:0, $left:0){
+  position: $position;
+  left: $left;
+  bottom: $bottom;
+}
+@mixin position-f-tl($position: fixed, $top:0, $left:0){
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin position-f-tr($position: fixed, $top:0, $right:0){
+  position: $position;
+  top: $top;
+  right: $right;
+}
+@mixin position-f-br($position: fixed, $bottom:0, $right:0){
+  position: $position;
+  right: $right;
+  bottom: $bottom;
+}
+@mixin position-f-bl($position: fixed, $bottom:0, $left:0){
+  position: $position;
+  left: $left;
+  bottom: $bottom;
+}
 
 // Pseudo Element -------------------------------------------------------------//
 //
