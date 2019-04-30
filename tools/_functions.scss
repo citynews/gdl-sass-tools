@@ -1,12 +1,5 @@
 // $FUNCTIONS  ---------------------------------------------------------------//
 //
-@function type($name, $size) {
-  @return map-get(map-get($typography, $name), $size);
-}
-
-@function line($name, $value) {
-  @return map-get(map-get(map-get($typography, $name), line-height), $value);
-}
 
 @function z-index($key) {
   @return map-get($z-index, $key);
