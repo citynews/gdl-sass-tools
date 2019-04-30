@@ -41,7 +41,7 @@
   font-weight: bold;
 }
 
- 
+
 // Float Classes ------------------------------------------------------------ //
 //
 .u-float-left {
@@ -51,7 +51,7 @@
 .u-float-right {
   float: right;
 }
- 
+
 // Border width and style Classes ------------------------------------------- //
 //
 .u-border {
@@ -132,7 +132,7 @@
   &-content-around {
     align-content: flex-around;
   }
-  
+
   // wrap
   &-wrap {
     flex-wrap:wrap;
@@ -173,8 +173,8 @@
 }
 
 .u-expand {
-  margin-left: -$gutter;
   margin-right: -$gutter;
+  margin-left: -$gutter;
 }
 
 // Image ---------------------------------------------------------------------//
@@ -203,7 +203,7 @@
 // General colors ---------------------------------------------------------- //
 
 @each $color, $hex in $colors {
-  
+
   .u-bg-#{$color}{
     background-color: $hex;
   }
