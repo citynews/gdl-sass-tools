@@ -97,7 +97,7 @@
 
 // Flexbox SASS mixins--------------------------------------------------------//
 // The spec: http://www.w3.org/TR/css3-flexbox
-@mixin flx($direction:column,$wrap:wrap,$justify:flex-start,$align:flex-start) {
+@mixin flexbox($direction:row,$wrap:nowrap,$justify:flex-start,$align:flex-start) {
   display: -webkit-flex;
   display: flex;
 
@@ -116,7 +116,7 @@
 }
 // Flexbox display
 //
-@mixin flexbox() {
+@mixin flex-display() {
   display: -webkit-flex;
   display: flex;
 }
@@ -124,7 +124,7 @@
 // The 'flex' shorthand
 // - applies to: flex items
 // <positive-number>, initial, auto, or none
-@mixin flex($values) {
+@mixin flex-values($values) {
   flex: $values;
   -webkit-flex: $values;
 }
@@ -156,7 +156,7 @@
 // Display Order
 // - applies to: flex items
 // <integer>
-@mixin order($val) {
+@mixin flex-order($val) {
   order: $val;
   -webkit-flex-order: $val;
 }
@@ -189,7 +189,7 @@
 // Axis Alignment
 // - applies to: flex containers
 // flex-start | flex-end | center | space-between | space-around
-@mixin justify-content($justify) {
+@mixin flex-justify-content($justify) {
   justify-content: $justify;
   -webkit-justify-content: $justify;
 }
@@ -197,7 +197,7 @@
 // Packing Flex Lines
 // - applies to: multi-line flex containers
 // flex-start | flex-end | center | space-between | space-around | stretch
-@mixin align-content($align) {
+@mixin flex-align-content($align) {
   justify-content: $align;
   -webkit-justify-content: $align;
 }
@@ -205,7 +205,7 @@
 // Cross-axis Alignment
 // - applies to: flex containers
 // flex-start | flex-end | center | baseline | stretch
-@mixin align-items($align) {
+@mixin flex-align-items($align) {
   align-items: $align;
   -webkit-align-items: $align;
 }
@@ -213,7 +213,7 @@
 // Cross-axis Alignment
 // - applies to: flex items
 // auto | flex-start | flex-end | center | baseline | stretch
-@mixin align-self($align) {
+@mixin flex-align-self($align) {
   align-self: $align;
   -webkit-align-self: $align;
   
