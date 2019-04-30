@@ -313,7 +313,7 @@
 
 // Transition ----------------------------------------------------------------//
 //
-@mixin transition($transition...) {
+@mixin transition($transition) {
   // A shorthand property for setting the four transition properties into a single property
   transition:         $transition;
   -webkit-transition: $transition;
