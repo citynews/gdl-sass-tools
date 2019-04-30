@@ -46,61 +46,67 @@
 
 
 // Text align Classes ------------------------------------------------------- //
-
-.u-align--center {
+//
+.u-text-center {
   text-align: center;
 }
 
-.u-align--left {
+.u-text-left {
   text-align: left;
 }
 
-.u-align--right {
+.u-text-right {
   text-align: right;
 }
 
 // Font style Classes ------------------------------------------------------- //
-
-.u-f--italic {
+//
+.u-italic {
   font-style: italic;
 }
 
-.u-f--bold {
+.u-bold {
   font-weight: bold;
 }
 
  
 // Float Classes ------------------------------------------------------------ //
-
-.u-float--left {
+//
+.u-float-left {
   float: left;
 }
 
-.u-float--right {
+.u-float-right {
   float: right;
 }
  
 // Border width and style Classes ------------------------------------------- //
-
-.u-bd {
+//
+.u-border {
   border: 1px solid;
 }
 
-.u-bd--top {
+.u-border-top {
   border-top: 1px solid;
 }
 
-.u-bd--right {
+.u-border-right {
   border-right: 1px solid;
 }
 
-.u-bd--bottom {
+.u-border-bottom {
   border-bottom: 1px solid;
 }
 
-.u-bd--left {
+.u-border-left {
   border-left: 1px solid;
 }
+
+.u-border-none {
+  border: 0 none;
+}
+
+
 
 .u-pointer{
   cursor: pointer;
@@ -112,87 +118,53 @@
 }
 
 
-// Text align
-//
-.u-align-center {
-  text-align: center;
-}
-
-.u-align-right {
-  text-align: right;
-}
-
-.u-align-left {
-  text-align: left;
-}
-
-.u-align-start {
-  align-self: start
-}
-
-// Float align
-//
-.u-float-left {
-  float: left;
-}
-
-.u-float-right {
-  float: right;
-}
-
-// Border none
-//
-.u-border-none {
-  border: 0 none;
-}
-
 // Flexbox
 //
 
 .u-flx {
   display: flex;
 
-  &--dir-row {
+  &-dir-row {
     flex-direction: row;
   }
 
-  &--dir-column {
+  &-dir-column {
     flex-direction: column;
   }
 
-  &--as-center {
+  &-as-center {
     align-self: center;
   }
 
-  &--jc-between {
+  &-jc-between {
     justify-content:space-between;
   }
 
-  &--jc-center {
+  &-jc-center {
     justify-content:center;
   }
 
-  &--wrap {
+  &-wrap {
     flex-wrap:wrap;
   }
 
-  &--n-wrap {
+  &-n-wrap {
     flex-wrap:nowrap;
   }
 
-  &--dir-reverse {
+  &-dir-reverse {
     flex-direction:row-reverse;
   }
 
-  &--start {
+  &-start {
     justify-content:flex-start;
   }
 
-  &--jc-end {
+  &-jc-end {
     justify-content:flex-end;
   }
 
-  &--ai-center {
+  &-ai-center {
     align-items:center;
   }
 }
@@ -227,13 +199,13 @@
 }
 
 .u-overflow {
-  &--hidden {
+  &-hidden {
     overflow: hidden;
   }
-  &--auto {
+  &-auto {
     overflow: auto;
   }
-  &--scroll {
+  &-scroll {
     overflow: scroll;
   }
 }
@@ -242,13 +214,13 @@
 
 @each $color, $hex in $colors {
   
-  .u-bg--#{$color}{
+  .u-bg-#{$color}{
     background-color: $hex;
   }
-  .u-color--#{$color}{
+  .u-color-#{$color}{
     color: $hex;
   }
-  .u-border--#{$color}{
+  .u-border-#{$color}{
     border-color: $hex;
   }
 }
