@@ -235,24 +235,18 @@
   }
 }
 
-// Media queries -------------------------------------------------------------//
+// Media queries and oritantion ----------------------------------------------//
 //
-@mixin bp($bp, $rule: min-width) {
+@mixin bp($bp, $rule: min-width,$orintation) {
   @media screen and (#{$rule}: map-get($breakpoints, $bp)) {
-    @content;
-  }
-}
-
-// Orientation media query
-//
-@mixin orientation($orientation) {
-  @if $orientation==landscape {
-    @media only screen and (orientation: landscape) {
-      @content;
-    }
-  } @else {
-    @media only screen and (orientation: portrait) {
-      @content;
+    @if $orientation==landscape {
+      @media only screen and (orientation: landscape) {
+        @content;
+      }
+    } @else {
+      @media only screen and (orientation: portrait) {
+        @content;
+      }
     }
   }
 }
