@@ -2,45 +2,17 @@
 
 // Margin and Padding Classes ----------------------------------------------- //
 
-@each $value in $measure {
-  .u-m--#{$value} {
-    margin: calc-measure($value);
+@each $orientation in $orientations {
+  .u-m-#{$orientation} {
+    @each $size in $sizes {
+      margin-#{$orientation}: $size;
+    }
   }
 
-  .u-mt--#{$value} {
-    margin-top: calc-measure($value);
-  }
-
-  .u-mr--#{$value} {
-    margin-right: calc-measure($value);
-  }
-
-  .u-mb--#{$value} {
-    margin-bottom: calc-measure($value);
-  }
-
-  .u-ml--#{$value} {
-    margin-left: calc-measure($value);
-  }
-
-  .u-p--#{$value} {
-    padding: calc-measure($value);
-  }
-
-  .u-pt--#{$value} {
-    padding-top: calc-measure($value);
-  }
-
-  .u-pr--#{$value} {
-    padding-right: calc-measure($value);
-  }
-
-  .u-pb--#{$value} {
-    padding-bottom: calc-measure($value);
-  }
-
-  .u-pl--#{$value} {
-    padding-left: calc-measure($value);
+  .u-p-#{$orientation} {
+    @each $size in $sizes {
+      padding-#{$orientation}: $size;
+    }
   }
 }
 
@@ -86,20 +58,10 @@
   border: 1px solid;
 }
 
-.u-border-top {
-  border-top: 1px solid;
-}
-
-.u-border-right {
-  border-right: 1px solid;
-}
-
-.u-border-bottom {
-  border-bottom: 1px solid;
-}
-
-.u-border-left {
-  border-left: 1px solid;
+@each $orientation in $orientations {
+  .u-border-#{$orientation} {
+    border-#{$orientation}: 1px solid;
+  }
 }
 
 .u-border-none {
