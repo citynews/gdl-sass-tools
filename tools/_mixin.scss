@@ -26,9 +26,10 @@
 
 // Border -------------------------------------------------------------------- //
 //
-@mixin border($width,$style) {
+@mixin border($width,$style,$color) {
   border-style: $style;
   border-width: $widh;
+  border-bottom-color: $color;
 }
 
 // Borders settings  -------------------------------------------------------- //
