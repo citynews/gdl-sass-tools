@@ -1,14 +1,14 @@
 {
-  "name": "scss_tools",
+  "name": "gdl-sass-tools",
   "version": "1.0.0",
-  "description": "Library of tools and utilities",
+  "description": "Saas Library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tamercitynews/SCSS_tools.git"
+    "url": "git+https://github.com/citynews/gdl-sass-tools.git"
   },
   "keywords": [
     "scss",
@@ -18,7 +18,7 @@
   "author": "CityNews",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tamercitynews/SCSS_tools/issues"
+    "url": "https://github.com/citynews/gdl-sass-tools/issues"
   },
-  "homepage": "https://github.com/tamercitynews/SCSS_tools#readme"
+  "homepage": "https://github.com/citynews/gdl-sass-tools#readme"
 }

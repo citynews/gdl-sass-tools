@@ -1,11 +1,15 @@
-# CityNews Sass Tools
-Library of tools and utilities.
+# GDL Sass Tools
+GDL Sass Tools is an abstract and reusable Sass tools library. It includes mixins, maps, functions and utility classes.
 
-## Aim and goals
-The main purpose is to create an abstract and reusable library in multiple projects, providing all possible solutions to the most common css needs.
-The library is based on ITCSS logic and on this it prepares utility classes, functions, mixin and maps.
+## Installation
+`npm -i gdl-sass-tools`
 
-## Instructions
-For a proper implementation of this library, the following global variables must be declared in the ITCSS structure:
+## How to use
+Import library in whatever CSS file you need it.
 
-* $gutter
+`@import 'node_modules/gdl-sass-tools/tools'` 
+`@import 'node_modules/gdl-sass-tools/utilities'`
+
+## Requirements
+
+It's mandatory to set the variable **$gutter** in your projects Settings file (e.g. `settings/_settings.scss`).
