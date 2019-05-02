@@ -237,7 +237,7 @@
 
 // Media queries and oritantion ----------------------------------------------//
 //
-@mixin bp($bp, $rule: min-width,$orintation) {
+@mixin bp($orintation, $bp, $rule: min-width) {
   @media screen and (#{$rule}: map-get($breakpoints, $bp)) {
     @if $orientation==landscape {
       @media only screen and (orientation: landscape) {
