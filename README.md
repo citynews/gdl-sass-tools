@@ -13,5 +13,4 @@ Import library in whatever CSS file you need it.
 Otherwise you simply import the compiled file, utility.css or utility.min.css into your head and in your ITCSS system, import the tool.scss file.
 
 ## Requirements
-
 It's mandatory to set the variable **$gutter** in your projects Settings file (e.g. `settings/_settings.scss`).
