@@ -55,9 +55,9 @@
   border: 1px solid;
 }
 
-@each $orientation in $orientations {
-  .u-border-#{$orientation} {
-    border-#{$orientation}: 1px solid;
+@each $key, $val in $orientations {
+  .u-border-#{$key} {
+    border-#{$val}: 1px solid;
   }
 }
 
