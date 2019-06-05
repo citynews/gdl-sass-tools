@@ -1,5 +1,5 @@
 # GDL Sass Tools
-GDL Sass Tools is an abstract and reusable Sass tools library. It includes mixins, maps, functions and utility classes.
+GDL(Global Design Language) Sass Tools is an abstract and reusable Sass tools library. It includes mixins, maps, functions and utility classes.
 
 ## Installation
 `npm -i gdl-sass-tools`
