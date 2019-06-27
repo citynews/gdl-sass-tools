@@ -1,4 +1,4 @@
-// $LAYOUT ------------------------------------------------------------------ //
+// LAYOUT ------------------------------------------------------------------ //
 
 // Margin and Padding Classes ----------------------------------------------- //
 
@@ -15,6 +15,7 @@
     }
   }
 }
+
 // Text align Classes ------------------------------------------------------- //
 //
 .u-text-center {
@@ -70,17 +71,17 @@
 }
 
 .u-shadow {
-  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 }
 
-// Flexbox
+// Flexbox ----------------------------------------------------------------- //
 //
-
 .u-flexbox {
   display: flex;
 
-  // directions
+  // Directions
+
   &-row {
     flex-direction: row;
   }
@@ -97,7 +98,8 @@
     flex-direction: column-reverse;
   }
 
-  // justify
+  // Justify
+
   &-justify-center {
     justify-content: center;
   }
@@ -118,7 +120,8 @@
     justify-content: space-around;
   }
 
-  // align contemt
+  // Align content
+
   &-content-center {
     align-content: center;
   }
@@ -139,7 +142,8 @@
     align-content: flex-around;
   }
 
-  // wrap
+  // Wrap
+
   &-wrap {
     flex-wrap: wrap;
   }
@@ -148,7 +152,8 @@
     flex-wrap: nowrap;
   }
 
-  // align items
+  // Align items
+
   &-items-center {
     align-items: center;
   }
@@ -171,28 +176,28 @@
 }
 
 // Lists ---------------------------------------------------------------------//
-
+//
 .u-nobullet {
   list-style: none;
 }
 
 // Margins -------------------------------------------------------------------//
-
+//
 .u-reset {
   margin: 0;
   padding: 0;
 }
 
 .u-expand {
-  margin-right: -$gutter;
   margin-left: -$gutter;
+  margin-right: -$gutter;
 }
 
 // Image ---------------------------------------------------------------------//
-
+//
 .u-img-responsive {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .u-display-none {
@@ -214,7 +219,7 @@
 }
 
 // General colors ---------------------------------------------------------- //
-
+//
 @each $color, $hex in $colors {
   .u-bg-#{$color} {
     background-color: $hex;
