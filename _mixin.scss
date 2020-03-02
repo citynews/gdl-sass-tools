@@ -1,6 +1,7 @@
 // scss-lint:disable PropertySortOrder VendorPrefix
 // $MIXINS ------------------------------------------------------------------ //
-@import "maps";
+
+// It is necessary  @import  a "maps" of values for some mixin
 
 // Animation ---------------------------------------------------------------- //
 //
@@ -88,7 +89,8 @@
 }
 
 // Columns Grid --------------------------------------------------------------//
-//
+// This mixin requires a map
+
 @mixin grid($breakpoint) {
   @media (min-width: map-get($breakpoints, $breakpoint)) {
     @for $col from 1 through 12 {
@@ -228,7 +230,8 @@
 }
 
 // Media queries and orientation ----------------------------------------------//
-//
+// This mixin requires a map
+
 @mixin bp($bp, $rule: min-width, $orientation:false) {
 
   @if ($orientation) {
@@ -322,7 +325,8 @@
 }
 
 // Z-index ------------------------------------------------------------------ //
-//
+// This mixin requires a map
+
 @mixin z($key) {
   @if map-has-key($z-index, $key) {
     z-index: map-get($z-index, $key);
